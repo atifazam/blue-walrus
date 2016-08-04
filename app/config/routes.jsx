@@ -1,5 +1,5 @@
 import React from 'react';
-import App from '../components/App';
+import App from '../containers/App';
 import Home from '../components/Home';
 import Test from '../components/Test';
 import NotFound from '../components/NotFound';

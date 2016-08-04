@@ -1,6 +1,7 @@
 const path = require('path');
 const express = require('express');
 const webpack = require('webpack');
+const morgan = require('morgan')
 const config = require('../webpack.config.dev');
 var bodyParser = require('body-parser');
 
@@ -9,6 +10,8 @@ const compiler = webpack(config);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+app.use(morgan('dev'));
 
 // Database connection
 const mongoose = require('mongoose');
