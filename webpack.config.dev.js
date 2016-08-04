@@ -40,5 +40,8 @@ module.exports = {
       defaults: [impy, autoprefixer, cssnext],
       cleaner:  [autoprefixer({ browsers: ['last 2 version'] })]
     };
+  },
+  resolve: {
+      extensions: ['', '.js', '.jsx']
   }
 };

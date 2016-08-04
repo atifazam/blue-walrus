@@ -8,8 +8,8 @@ import { Route, IndexRoute } from 'react-router';
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={Home} />
-    <Route path="home" component={Home} />
-    <Route path="test" component={Test} />
+    <Route path="/home" component={Home} />
+    <Route path="/test" component={Test} />
     <Route path="*" component={NotFound} />
   </Route>
 );
