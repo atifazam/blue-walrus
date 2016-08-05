@@ -4,6 +4,8 @@ import DevTools from 'mobx-react-devtools';
 
 import actions from '../utils/actions';
 
+import EasyTransition from 'react-easy-transition'
+
 class App extends React.Component {
   
   componentDidMount() {
@@ -21,7 +23,14 @@ class App extends React.Component {
             <li><Link to="/notfound">Not Found</Link></li>
           </nav>
           <div className="detail">
+            <EasyTransition
+                path={location.pathname}
+                initialStyle={{opacity: 0}}
+                transition="opacity 0.3s ease-in"
+                finalStyle={{opacity: 1}}
+            >
               {this.props.children}
+            </EasyTransition>
           </div>
         </div>
       </div>

@@ -14,40 +14,21 @@ body {
 
 nav {
 	list-style: none;
+	padding-bottom: 2em;
 
 	li {
-		font-size: 2em;
+		font-size: 1em;
+		display: inline-block;
+		padding: 0 0.5em;
+
+		a {
+			color: #606060;
+
+			&:hover {
+				border-bottom: 1px solid #606060;
+			}
+		}
 	}
-}
-
-.fade-appear {
-	opacity: 0.01;
-	transition: opacity .5s ease-in;
-}
-
-.fade-appear.fade-appear-active {
-  opacity: 1;
-  transition: opacity .5s ease-in;
-}
-
-.fade-enter {
-  opacity: 0;
-  transition: opacity .5s ease-in;
-}
-
-.fade-leave {
-  opacity: 1;
-  transition: opacity .5s ease-in;
-}
-
-.fade-enter.pageChange-enter-active {
-  opacity: 1;
-  transition: opacity .5s ease-in;
-}
-
-.fade-leave {
-  opacity: 1;
-  transition: opacity .5s ease-in;
 }
 
 @import 'partials/buttons';
