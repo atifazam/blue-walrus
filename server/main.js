@@ -18,7 +18,7 @@ const mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost:27017/test', function() {
   console.log("Connected to MongoDB...");
-  mongoose.connection.db.dropDatabase();
+  //mongoose.connection.db.dropDatabase();
 });
 
 // router for the API

@@ -12,17 +12,17 @@ class App extends React.Component {
   
   render() {
     return (
-      <div className="welcome">
-        <h1>My app</h1>
-        <nav>
-          <li><Link to="/home">Home</Link></li>
-          <li><Link to="/test">Test</Link></li>
-          <li><Link to="/notfound">Not Found</Link></li>
-          <li><Link to="/asddsa">Random</Link></li>
-        </nav>
-        <div className="detail">
-          <DevTools />
-          {this.props.children}
+      <div className="wrapper">
+        <div className="container">
+          <h1>Design Case Studies</h1>
+          <nav>
+            <li><Link to="/home">Home</Link></li>
+            <li><Link to="/test">Test</Link></li>
+            <li><Link to="/notfound">Not Found</Link></li>
+          </nav>
+          <div className="detail">
+              {this.props.children}
+          </div>
         </div>
       </div>
     )
